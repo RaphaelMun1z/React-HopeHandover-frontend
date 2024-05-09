@@ -1,0 +1,51 @@
+.container {
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+    background: whitesmoke !important;
+    padding-bottom: 0;
+    padding: 2em;
+    padding-top: calc(5em + 20px);
+}
+
+.secTitle>h1 {
+    font-size: 3em;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+.containerProjects>.secTitle>h1 {
+    color: #af9d9d !important;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+}
+
+.containerProjects {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin: 2em 2em 0 0;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.inner {
+    position: relative;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 30px !important;
+    width: fit-content;
+    height: fit-content;
+
+    div{
+        width: fit-content;
+    }
+}

@@ -1,0 +1,113 @@
+.section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background: linear-gradient(90deg, rgb(15, 138, 70) 0%, rgb(0, 166, 81) 14%, rgb(0, 166, 81) 87%, rgb(15, 138, 70) 100%);
+}
+
+.sectionDark {
+    background: rgb(171,202,213);
+    background: linear-gradient(90deg, rgba(171,202,213,1) 0%, rgba(135,200,224,1) 35%, rgba(89,164,191,1) 100%); 
+}
+
+.containerContent {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 5em 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.insideContainerContent {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.insideContainerContent>h1 {
+    color: #fff;
+    font-size: 30pt;
+    pointer-events: none;
+}
+
+.sectionDark .insideContainerContent>h1 {
+    color: #fff;
+}
+
+.sectionDark .insideContainerContent>p {
+    color: rgba(255, 255, 255, .8);
+}
+
+.insideContainerContent>p {
+    color: #fff;
+    font-size: 13pt;
+    margin: 10px 0;
+    pointer-events: none;
+}
+
+.sectionDark .insideContainerContent>.link {
+    color: #222;
+}
+
+.insideContainerContent>.link {
+    pointer-events: all;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.sectionDark .insideContainerContent>.link>a {
+    background-color: #fff;
+}
+
+.insideContainerContent>.link>a {
+    color: #222;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: .5em 1em .5em 1.5em;
+    background-color: #fff;
+    transition: all .1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.insideContainerContent>.link>a>svg {
+    font-size: 17pt;
+    margin-left: 7px;
+}
+
+.insideContainerContent>.link>a:hover {
+    transition: all .1s ease-in-out;
+    opacity: .7;
+}
+
+.insideContainerContent>img {
+    object-fit: contain;
+    object-position: center;
+    max-height: 450px;
+    height: 100%;
+}
+
+@media (max-width: 600px){
+    .section{
+        height: fit-content !important;
+        min-height: 100vh !important;
+    }
+    .containerContent{
+        width: 100% !important;
+        padding: 2em 3em !important;
+    }
+}

@@ -1,0 +1,135 @@
+$corFundo: #fff;
+$corTexto: linear-gradient(90deg, rgb(15, 138, 70) 0%, rgb(0, 166, 81) 14%, rgb(0, 166, 81) 87%, rgb(15, 138, 70) 100%);
+
+* {
+    opacity: 1 !important;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    border: none !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    padding: 10px;
+    font-size: 15px;
+    background-color: $corFundo;
+    color: $corTexto;
+    resize: none;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px $corTexto;
+    }
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: auto;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .formcontainer {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 1em 3em;
+        gap: 20px;
+
+        .answer{
+            position: relative;
+            display: flex;
+            width: 400px;
+            height: fit-content;
+            background-color: rgb(231, 231, 231);
+            border-radius: 10px;
+            
+            p{
+                margin: 1em;
+            }
+        }
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            label {
+                color: #222;
+                font-weight: 700;
+                font-size: 14pt;
+            }
+
+            input,
+            textarea {
+                padding: 10px;
+                border: none;
+                background-color: rgb(231, 231, 231);
+                border-radius: 5px;
+                font-size: 12pt;
+                margin-bottom: 10px;
+                width: 400px;
+            }
+
+            textarea {
+                min-height: 100px;
+                max-height: 200px;
+                resize: vertical;
+            }
+
+            .submitButton {
+                padding: 10px;
+                background: linear-gradient(45deg, rgb(19, 170, 87) 0%, rgb(0, 166, 81) 50%, rgb(0, 166, 81) 50%, rgb(15, 138, 70) 100%);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 150px;
+                margin: auto;
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: 12pt;
+                margin-top: 10px;
+                transition: all .1s ease-in-out;
+
+                &:hover {
+                    transition: all .1s ease-in-out;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

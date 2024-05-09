@@ -1,0 +1,32 @@
+.container {
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+    background: whitesmoke !important;
+}
+
+.secTitle h1 {
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+}
+
+.containerProds {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 2em 2em 2em 0;
+    flex-wrap: wrap;
+    gap: 1%;
+}

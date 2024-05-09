@@ -1,0 +1,60 @@
+.cardsContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .cardContainer {
+        position: relative;
+        display: flex;
+        width: 30%;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 20px 0;
+        overflow: hidden;
+
+        .imgBg {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            bottom: -40px;
+            right: -30px;
+            opacity: .3;
+        }
+
+        .insideCard {
+            position: relative;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1em;
+
+            .imgSvg {
+                position: relative;
+                display: flex;
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+
+            h3 {
+                color: #868686;
+                font-size: 12pt;
+                font-weight: 600;
+            }
+
+            p {
+                color: #868686;
+                font-size: 10pt;
+                font-weight: 300;
+            }
+        }
+    }
+}

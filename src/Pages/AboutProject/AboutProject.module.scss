@@ -1,0 +1,170 @@
+.midiaMainContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 2em 10em;
+
+    .midiaContainer {
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        height: fit-content;
+        flex-wrap: wrap;
+        align-content: baseline;
+        gap: 20px;
+
+        .title {
+            color: #222;
+            font-size: 30pt;
+        }
+
+        .picturesContainer {
+            position: relative;
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 80px;
+
+            .contentBase {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 10px;
+                font-weight: 500;
+
+                h3 {
+                    color: #222;
+                    font-size: 20pt;
+                    font-weight: 400;
+                }
+
+                p{
+                    color: #8f8787;
+                    font-size: 12pt;
+                    font-weight: 700;
+                    margin-left: auto;
+                }
+
+                .picture {
+                    position: relative;
+                    display: flex;
+                    width: 100%;
+                    height: 500px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    img {
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 8em;
+    display: flex;
+    align-items: center;
+
+    .projectHeader {
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-height: 70vh;
+        height: fit-content;
+        flex-wrap: wrap;
+
+        .projectData {
+            position: relative;
+            display: flex;
+            width: 50%;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 1em 2em;
+
+            &:nth-child(1) {
+                gap: 10px;
+            }
+
+            &:nth-child(2) {
+                justify-content: space-between;
+                padding: 3em 2em;
+            }
+
+            .title {
+                color: #fff;
+                height: fit-content;
+                font-size: 20pt;
+            }
+
+            .description {
+                font-size: 10pt;
+                color: #fff;
+                height: fit-content;
+                max-width: 100%;
+                line-break: anywhere;
+            }
+
+            .mainImagesContainer {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 150px;
+                margin-top: 20px;
+                justify-content: space-between;
+
+                .imageContainer {
+                    position: relative;
+                    display: flex;
+                    width: 30%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: whitesmoke;
+                    overflow: hidden;
+
+                    img {
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .generalData {
+                position: relative;
+                display: flex;
+                font-size: 12pt;
+                color: #fff;
+                margin: 0;
+                font-weight: 400;
+                text-transform: capitalize;
+                gap: 15px;
+                align-items: center;
+
+                svg {
+                    font-size: 20pt;
+                }
+            }
+        }
+    }
+}

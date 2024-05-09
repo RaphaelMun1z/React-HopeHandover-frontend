@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ccc;
+  width: 100vw;
+  overflow-x: hidden;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+html, body, #root{
+  background-color: #EFEFEF;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(47, 175, 71);
+  border-radius: 0px;
+}

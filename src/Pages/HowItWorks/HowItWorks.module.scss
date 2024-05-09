@@ -1,0 +1,88 @@
+$corFundo: #87c8e0;
+$corTexto: linear-gradient(90deg, rgb(15, 138, 70) 0%, rgb(0, 166, 81) 14%, rgb(0, 166, 81) 87%, rgb(15, 138, 70) 100%);
+
+.steps {
+  background: $corFundo;
+  color: $corTexto;
+  padding: 7em 3em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__title {
+    color: #fff;
+    font-size: 40pt;
+    text-align: left;
+    align-self: flex-start;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+
+    &Number {
+      background: $corTexto;
+      color: $corFundo;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &Title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &Description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.lineDivCards {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: fit-content;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .steps {
+    justify-content: center;
+    gap: 50px;
+
+    &__item {
+      width: 100%;
+      max-width: inherit !important;
+      margin: 0 auto;
+    }
+  }
+
+  
+}

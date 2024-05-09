@@ -1,0 +1,61 @@
+.containerSections {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    padding-top: 110px;
+
+    .formsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+
+        .contactCard {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1;
+            min-width: 500px;
+            max-width: 400px;
+
+            h2 {
+                font-size: 24px;
+                color: #333;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+                color: #666;
+                margin: 10px 0;
+
+                strong {
+                    font-weight: bold;
+                    color: #444;
+                }
+            }
+        }
+    }
+
+    .secTitle {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 10px;
+        }
+    }
+}

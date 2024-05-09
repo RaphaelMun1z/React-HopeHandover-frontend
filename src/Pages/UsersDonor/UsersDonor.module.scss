@@ -1,0 +1,79 @@
+.container {
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+    padding-top: calc(5em + 20px);
+    background: whitesmoke !important;
+}
+
+.secTitle h1 {
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+}
+
+.containerProds {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 2em 2em 2em 0;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.card {
+    width: 24%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cardRegion {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cardDonations {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, green, rgb(13, 158, 13));
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.cardButton:hover {
+    opacity: .7;
+}

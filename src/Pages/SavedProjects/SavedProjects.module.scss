@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.inner {
+    display: flex;
+    padding: 1em;
+    width: fit-content;
+}
+
+.item {
+    min-height: 200px;
+    min-width: 400px;
+    padding: 14px;
+    height: 100%;
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.containerSections {
+    position: relative;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    background: whitesmoke !important;
+}
+
+.secTitle{
+    margin: 1em 0 0 0;
+}
+
+.secTitle h1{
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    color: #222;
+}
+
+.secTitle p{
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+}

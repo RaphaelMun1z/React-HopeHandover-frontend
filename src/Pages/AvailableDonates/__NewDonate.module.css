@@ -1,0 +1,94 @@
+.container {
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+}
+
+.secTitle h1 {
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: min-content;
+    text-align: left;
+    color: #222;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.containerForm {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 2em;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #e6e6e6;
+    margin-top: 5px;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 300px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4' viewBox='0 0 8 4'%3E%3Cpath fill='%23777' d='M4 4L0 0h8z'/%3E%3C/svg%3E") no-repeat right 10px center/8px 4px;
+}

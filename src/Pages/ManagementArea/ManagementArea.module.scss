@@ -1,0 +1,21 @@
+.container {
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+}
+
+.secTitle h1 {
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: min-content;
+    text-align: left;
+    color: #222;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+    margin-top: 20px;
+}

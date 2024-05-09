@@ -1,0 +1,25 @@
+.button {
+    position: relative;
+    display: flex;
+    color: #fff !important;
+    width: fit-content;
+    height: fit-content;
+    max-height: 42px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #fd454c, #ff2727);
+    border: none;
+    margin: 0;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 12pt;
+    cursor: pointer;
+
+    &:hover{
+        opacity: .7;
+    }
+}

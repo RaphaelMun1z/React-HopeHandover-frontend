@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+.section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+    padding-top: 87px !important;
+    background-image: url("/src/img/bg.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+
+    .container {
+        position: relative;
+        display: flex;
+        width: 70%;
+        height: 80%;
+
+        .insideContainer {
+            position: relative;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1) {
+                justify-content: left !important;
+            }
+
+            h1 {
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                font-size: 60pt;
+                text-align: left;
+                color: #fff;
+                white-space: pre-wrap !important;
+                word-break: break-all !important;
+            }
+
+            img {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+.container>h1 {
+    color: green;
+    font-size: 45pt;
+    font-family: 'Cookie', cursive;
+}
+
+.container>p {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 15pt;
+    color: green;
+    transition: all .1s ease-in-out;
+}
+
+.container>p:hover {
+    opacity: .7;
+    transition: all .1s ease-in-out;
+}
+
+.container>p>a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: .5em 1em;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+}
+
+.container>p>a>svg {
+    margin: auto;
+    margin-left: 10px;
+}

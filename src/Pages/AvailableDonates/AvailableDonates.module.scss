@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    display: flex;
+    padding: 2em;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: fit-content;
+    padding-top: calc(5em + 20px);
+    background: whitesmoke !important;
+}
+
+.secTitle h1 {
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    width: min-content;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+.secTitle p {
+    color: rgba(34, 34, 34, .7);
+    max-width: 500px;
+}
+
+.containerProds {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding-top: 2em;
+}
+

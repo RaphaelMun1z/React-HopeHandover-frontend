@@ -1,0 +1,280 @@
+.card {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 24%;
+    background: linear-gradient(to right, rgb(38, 194, 38), rgb(7, 163, 7));
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+
+    .card_image {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        cursor: zoom-in;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            -webkit-filter: drop-shadow(7px 10px 12px rgba(0 0 0 / 90%));
+            filter: drop-shadow(7px 10px 12px rgba(0 0 0 / 90%));
+            transition: all .1s ease-in-out;
+
+            &:hover {
+                transition: all .1s ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .card_content {
+        position: absolute;
+        display: flex;
+        height: 90px;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        height: fit-content;
+        padding: 1em 1.5em;
+        flex-wrap: wrap;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        align-content: baseline;
+
+        .title {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                svg {
+                    transform: scale(.9);
+                }
+            }
+
+            div {
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                transition: all .1s ease-in-out;
+
+                svg {
+                    font-size: 30pt;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+
+
+
+                h1 {
+                    font-weight: 400;
+                    color: #222;
+                }
+            }
+        }
+
+        .donor {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            flex-wrap: wrap;
+
+            p {
+                font-size: 10pt;
+                color: #222;
+                opacity: .7;
+            }
+        }
+
+        .generalInfo {
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 15px;
+
+            .infoArea {
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 5px;
+
+                p {
+                    color: #222;
+                    font-size: 10pt;
+                    font-weight: 200;
+                    display: flex;
+                    align-items: center;
+                }
+
+                span {
+                    position: relative;
+                    display: flex;
+                    color: #fff;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 30px;
+                    min-height: 30px;
+                    width: fit-content;
+                    font-weight: 400;
+                    height: fit-content !important;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-size: 10pt;
+                    gap: 10px;
+                    background: linear-gradient(to right, rgb(38, 194, 38), rgb(7, 163, 7));
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+            }
+        }
+    }
+}
+
+/* DonateCard.module.scss */
+
+.custom_modal {
+    position: fixed;
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    background-color: #fff;
+    padding: 2em 3em;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .modalContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #686868;
+            margin: 5px 0;
+        }
+
+        .leftColumn {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .rightColumn {
+            width: 50%;
+            padding: 10px;
+
+            &.div {
+                gap: 30px !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+
+        .general_info {
+            gap: 30px !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+}
+
+.highlight_message {
+    color: #f00 !important;
+    margin: 10px 0 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.important_msg {
+    color: #333;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+        border: none;
+        padding: 1em 1.5em;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .confirm_button {
+        background-color: #4caf50;
+        color: #fff;
+    }
+
+    .cancel_button {
+        background-color: #f44336;
+        color: #fff;
+    }
+}
+
+.acceptTerms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #333;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 !important;
+
+        &:checked {
+            background-color: #333;
+            border: 2px solid #333;
+        }
+    }
+
+    span {
+        font-size: 16px;
+        color: #333;
+    }
+}
+
+.itemImage {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    max-height: 120px;
+    overflow: hidden;
+    margin: 0 auto 10px 0;
+    background-color: #ccc;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 5px 10px green inset;
+}
