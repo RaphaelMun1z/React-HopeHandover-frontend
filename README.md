@@ -5,7 +5,7 @@
 ##
 
 ### 📄 Descrição
-<p>&emsp;...</p>
+<p>&emsp;Hope Handover é um sistema de doação desenvolvido como trabalho de conclusão de curso (TCC) durante o ensino médio técnico. Este projeto, criado com ReactJS e NodeJs, faz uso do banco de dados MySQL para gerenciar as doações.</p>
 
 ##
 
